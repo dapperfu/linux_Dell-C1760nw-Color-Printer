@@ -1,4 +1,4 @@
-wget https://github.com/jed-frey/linux_Dell-C1760nw-Color-Printer/releases/download/v0.0.1/6000_6010_deb_1.01_20110210.zip
+wget https://github.com/dapperfu/linux_Dell-C1760nw-Color-Printer/releases/download/v0.0.1/6000_6010_deb_1.01_20110210.zip
 unzip 6000_6010_deb_1.01_20110210.zip
 
 dpkg --add-architecture i386
