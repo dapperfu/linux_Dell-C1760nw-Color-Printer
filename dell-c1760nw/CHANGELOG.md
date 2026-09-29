@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.2
+
+- App version matches tag v0.6.2.
+
 ## 0.6.1
 
 - App version matches tag v0.6.1.

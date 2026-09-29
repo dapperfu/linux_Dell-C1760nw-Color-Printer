@@ -50,7 +50,7 @@ Open `http://<this-machine>:50631` and sign in with `CUPS_USER` and `CUPS_PASSWO
 
 ## 3. Home Assistant
 
-Release 0.6.1 is a Home Assistant app. The app version matches tag `v0.6.1`. Install it on an amd64 Home Assistant machine and that machine becomes the CUPS server for the Dell C1760nw. The 32-bit Xerox driver stays inside the app.
+Release 0.6.2 is a Home Assistant app. The app version matches tag `v0.6.2`. Install it on an amd64 Home Assistant machine and that machine becomes the CUPS server for the Dell C1760nw. The 32-bit Xerox driver stays inside the app.
 
 Open **Settings → Apps** (older versions call this **Add-ons**), open the store, and choose **Repositories**. Add:
 

@@ -1,6 +1,6 @@
 # Dell C1760nw CUPS
 
-Version 0.6.1.
+Version 0.6.2.
 
 The Dell C1760nw uses the 2011 Xerox Phaser 6000B driver, which is 32-bit. This app installs that driver inside its container. Home Assistant itself stays a normal 64-bit system.
 
