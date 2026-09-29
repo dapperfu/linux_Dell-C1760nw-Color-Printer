@@ -37,12 +37,12 @@ Open `http://<this-machine>:50631` and sign in with `CUPS_USER` and `CUPS_PASSWO
 
 ## Home Assistant
 
-This repository is a Home Assistant app repository. The app is amd64 only, because the driver is 32-bit x86.
+Release 0.6.0 is a Home Assistant app. The app version matches tag `v0.6.0`. It is amd64 only, because the driver is 32-bit x86.
 
-On the Home Assistant machine, open **Settings → Apps** (older versions call this **Add-ons**), open the store, and choose **Repositories** from the menu. Add:
+On the Home Assistant machine, open **Settings → Apps** (older versions call this **Add-ons**), open the store, and choose **Repositories**. Add:
 
 `https://github.com/dapperfu/linux_Dell-C1760nw-Color-Printer`
 
 [![Open your Home Assistant instance and show the add repository dialog with this repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fdapperfu%2Flinux_Dell-C1760nw-Color-Printer)
 
-**Dell C1760nw CUPS** then shows in the store. Install it, set the admin password and the printer IP, and start it. The web interface is on port 50631. The same options are documented in [dell-c1760nw/DOCS.md](dell-c1760nw/DOCS.md).
+**Dell C1760nw CUPS** shows in the store. Install it and start it. The admin password defaults to `changeme`. Change it under **Configuration**, save, and restart the app. The web interface is on port 50631. Details are in [dell-c1760nw/DOCS.md](dell-c1760nw/DOCS.md).

@@ -1,11 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
-# Home Assistant writes the app options here and mounts /data for persistence.
+# Home Assistant writes the Configuration page values here.
 if [ -f /data/options.json ]; then
     CUPS_USER=$(jq -r '.cups_user // "admin"' /data/options.json)
-    CUPS_PASSWORD=$(jq -r '.cups_password // empty' /data/options.json)
-    PRINTER_IP=$(jq -r '.printer_ip // empty' /data/options.json)
+    CUPS_PASSWORD=$(jq -r '.cups_password // "changeme"' /data/options.json)
+    PRINTER_IP=$(jq -r '.printer_ip // ""' /data/options.json)
     export CUPS_USER CUPS_PASSWORD PRINTER_IP
 
     mkdir -p /data/cups /data/spool
@@ -19,6 +19,7 @@ if [ -f /data/options.json ]; then
 fi
 
 : "${CUPS_USER:=admin}"
+: "${CUPS_PASSWORD:=changeme}"
 if [ -z "${CUPS_PASSWORD:-}" ]; then
     echo "CUPS_PASSWORD is required" >&2
     exit 1

@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## 0.6.0
 
-- CUPS server with the Xerox Phaser 6000B driver, published on port 50631.
-- Home Assistant app configuration for the admin user, password, and printer IP.
+- Home Assistant app release matching tag v0.6.0.
+- Admin password is a Configuration option and defaults to `changeme` on install.

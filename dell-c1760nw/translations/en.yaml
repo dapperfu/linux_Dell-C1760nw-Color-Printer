@@ -4,7 +4,9 @@ configuration:
     description: User name for the CUPS web interface.
   cups_password:
     name: Admin password
-    description: Password for the CUPS web interface. Change this before starting the app.
+    description: >-
+      Password for the CUPS web interface. A new install uses changeme.
+      Change it here, save, and restart the app to apply the new password.
   printer_ip:
     name: Printer IP address
     description: >-
