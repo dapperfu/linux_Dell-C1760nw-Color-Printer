@@ -116,7 +116,7 @@ EXPOSE 631
 ENTRYPOINT ["/entrypoint.sh"]
 
 LABEL \
-    io.hass.version="0.6.0" \
+    io.hass.version="0.6.1" \
     io.hass.type="app" \
     io.hass.arch="amd64" \
     io.hass.name="Dell C1760nw CUPS" \
