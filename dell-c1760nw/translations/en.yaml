@@ -1,0 +1,15 @@
+configuration:
+  cups_user:
+    name: Admin user
+    description: User name for the CUPS web interface.
+  cups_password:
+    name: Admin password
+    description: Password for the CUPS web interface. Change this before starting the app.
+  printer_ip:
+    name: Printer IP address
+    description: >-
+      When set, the app creates a shared queue named Dell-C1760nw at
+      socket://address:9100 using the Xerox Phaser 6000B driver. Leave this
+      empty to add the printer in the web interface.
+network:
+  631/TCP: CUPS web interface and IPP printing

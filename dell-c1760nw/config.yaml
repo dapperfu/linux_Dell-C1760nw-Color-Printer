@@ -1,0 +1,27 @@
+name: Dell C1760nw CUPS
+version: "1.0.0"
+slug: dell_c1760nw
+description: >-
+  CUPS print server for the Dell C1760nw. The 32-bit Xerox driver stays
+  inside this app so the Home Assistant machine does not need i386 packages.
+url: https://github.com/dapperfu/linux_Dell-C1760nw-Color-Printer/tree/master/dell-c1760nw
+arch:
+  - amd64
+init: false
+startup: services
+boot: auto
+timeout: 30
+webui: http://[HOST]:[PORT:631]/
+watchdog: tcp://[HOST]:[PORT:631]
+ports:
+  631/tcp: 50631
+ports_description:
+  631/tcp: CUPS web interface and IPP printing
+options:
+  cups_user: admin
+  cups_password: changeme
+  printer_ip: ""
+schema:
+  cups_user: str
+  cups_password: password
+  printer_ip: str
