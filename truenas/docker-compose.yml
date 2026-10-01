@@ -1,0 +1,26 @@
+# TrueNAS custom app for the Dell C1760nw (Xerox Phaser 6000B).
+# Install from Apps → Discover → Install via YAML. See the README.
+name: dell-c1760nw
+
+services:
+  cups:
+    build:
+      context: https://github.com/dapperfu/linux_Dell-C1760nw-Color-Printer.git#master:dell-c1760nw
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    ports:
+      - "50631:631"
+    restart: unless-stopped
+    environment:
+      CUPS_USER: admin
+      CUPS_PASSWORD: changeme
+      # Set this to the printer address to create the shared queue on startup.
+      # Leave it empty to add the printer once in the web UI.
+      PRINTER_IP: ""
+    volumes:
+      - cups-etc:/etc/cups
+      - cups-spool:/var/spool/cups
+
+volumes:
+  cups-etc:
+  cups-spool:
